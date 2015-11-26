@@ -41,21 +41,23 @@
             <li>
               <a 
                 href="#" 
-                class="btn btn-default btn-lg navbar-btn {% if cur_page == 'home' %} active {%  endif %}" 
+                class="btn btn-default btn-md navbar-btn 
+                {% if cur_page == 'home' %} active {%  endif %}" 
                 role="button"
               > <!-- <a> -->
                 <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-              </a> home
+              home </a> 
             </li>
             
             <li>
+              {% url 'blog:blog_index' as the_url %}
               <a 
                 href="{% url 'blog:blog_index' %}" 
-                class="btn btn-default btn-lg navbar-btn {% if cur_page == 'blog_index' %} active {%  endif %}" 
+                class="btn btn-default btn-md navbar-btn {% if request.get_full_path == the_url %} active {%  endif %}" 
                 role="button"
               > <!-- <a> -->
                 <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
-              </a> blog
+              blog </a>
             </li>
             
             
