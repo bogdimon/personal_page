@@ -1,9 +1,9 @@
-{% extends "portfolio/index.html" %}
+{% extends "blog/index.html" %}
 
 {% load django_bootstrap_breadcrumbs %}
   {% block breadcrumbs %}
     {{ block.super }}
-    {% breadcrumb item.name "portfolio:post_text" %}
+    {% breadcrumb item.name "blog:post_text" %}
   {% endblock %}
 
 
