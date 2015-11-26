@@ -73,6 +73,7 @@ WSGI_APPLICATION = 'my_website_project.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
+# (!!)  see heroku config below
 
 DATABASES = {
     'default': {
@@ -120,6 +121,5 @@ STATIC_ROOT = 'staticfiles'
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(ps.path.dirname(BASE_DIR), 'static'),
 )
-
