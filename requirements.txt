@@ -3,6 +3,7 @@ cryptography==1.1.1
 dj-database-url==0.3.0
 dj-static==0.0.6
 Django==1.8.7
+django-bootstrap-breadcrumbs==0.7.1
 django-toolbelt==0.0.1
 enum34==1.0.4
 gunicorn==19.4.1

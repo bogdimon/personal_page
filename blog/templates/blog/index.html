@@ -1,0 +1,28 @@
+{% extends "blog/base.html" %}
+
+{% load django_bootstrap_breadcrumbs %}
+  {% block breadcrumbs %}
+    {{ block.super }}
+    {% breadcrumb "Blog" "blog_index" %}
+  {% endblock %}
+
+
+{% block title %}My amazing start page{% endblock %}
+
+
+
+
+{% block content %}
+  <div class="row">
+    <div class="col-sm-8 blog-main">
+      {% for item in items %} 
+        <div class="blog-post">
+          <h2 class="blog-post-title"><a href="{{ item.pk }}">{{ item.name }}</a></h2>
+          <p class="blog-post-meta">{{ item.publish_date }} by <a href="#">{{ item.author }}</a></p>
+          <p>{{ item.thumbnail }}</p>
+          <hr>
+        </div><!-- /.blog-post -->
+      {% endfor %}
+    </div><!-- /.blog-main -->
+  </div><!-- /.row -->
+{% endblock %}
