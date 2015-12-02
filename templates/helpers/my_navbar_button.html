@@ -1,0 +1,15 @@
+{% url button_target_name as the_url %}
+{% load blog_tags %}
+
+<li>
+	<a 
+	href="{{ the_url }}" 
+	class="btn btn-default btn-md navbar-btn 
+	{% navactive request the_url %}"
+	role="button"
+	> <!-- <a> -->
+		<span class="{{ button_span_class }}" aria-hidden="true"></span>
+	{{ button_text }}</a>
+	
+
+</li>
