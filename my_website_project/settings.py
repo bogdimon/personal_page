@@ -133,10 +133,12 @@ STATICFILES_DIRS = (
 
 
 # scss
-SASS_PROCESSOR_INCLUDE_DIRS = (
-    os.path.join(BASE_DIR, 'scss'),
-    # os.path.join(BASE_DIR, 'node_modules'),
-)
+SASS_PROCESSOR_ROOT = 'static/scssfiles'
+
+# SASS_PROCESSOR_INCLUDE_DIRS = (
+#     os.path.join(os.path.dirname(BASE_DIR), 'static/scss'),
+#     # os.path.join(BASE_DIR, 'node_modules'),
+# )
 
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',

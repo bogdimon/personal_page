@@ -1,0 +1,51 @@
+/*
+ * Globals
+ */
+/* line 5, /home/dima/Documents/Python/my_website_project/static/scss/mystyle.scss */
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #555;
+  padding-top: 120px;
+  padding-bottom: 20px; }
+
+/* line 13, /home/dima/Documents/Python/my_website_project/static/scss/mystyle.scss */
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #333; }
+
+/*
+ * Navigation
+ */
+/* line 30, /home/dima/Documents/Python/my_website_project/static/scss/mystyle.scss */
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none; }
+
+/* line 35, /home/dima/Documents/Python/my_website_project/static/scss/mystyle.scss */
+.navbar .navbar-collapse {
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+/* line 40, /home/dima/Documents/Python/my_website_project/static/scss/mystyle.scss */
+.navbar .btn {
+  margin-left: 10px; }
+
+/*
+* Blog
+*/
+/* line 50, /home/dima/Documents/Python/my_website_project/static/scss/mystyle.scss */
+.blog-title {
+  text-align: center; }
+
+/* line 56, /home/dima/Documents/Python/my_website_project/static/scss/mystyle.scss */
+.progress {
+  height: 4px; }
+
+/*# sourceMappingURL=../../../../../../../static/scss/mystyle.css.map */
