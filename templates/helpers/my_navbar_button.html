@@ -13,3 +13,7 @@
 	
 
 </li>
+
+            {% for i in navitems %}
+              {% include "helpers/my_navbar_button.html" with button_target_name=i.urlname button_text=i.text button_span_class=i.icon %}
+            {% endfor %}

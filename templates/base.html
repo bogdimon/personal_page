@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 {% load staticfiles %}
 {% load sass_tags %}
+{% load blog_tags %}
 
 
 {% load django_bootstrap_breadcrumbs %}
@@ -43,9 +44,7 @@
           <ul class="nav navbar-nav">
             
 
-            {% for i in navitems %}
-              {% include "helpers/my_navbar_button.html" with button_target_name=i.urlname button_text=i.text button_span_class=i.icon %}
-            {% endfor %}
+          {% navbar_button request 'blog:test home home' 'blog:blog_index blog pencil' %}
             
             
 <!--             <li class="{% if cur_page == 'blog_index' %} active {%  endif %}"><a href="{% url "blog:blog_index" %}">Blog</a></li> -->
